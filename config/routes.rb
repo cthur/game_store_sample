@@ -1,5 +1,7 @@
 GameStore::Application.routes.draw do
 
+  resources :platforms
+
   resources :consoles
 
   root 'home#index'

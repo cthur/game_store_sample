@@ -1,0 +1,7 @@
+Home Controller        - Displays the game store's home page -- Future: Create links to contact page, shopping cart, login
+Console Controller     - List all the consoles available for purchase
+Platforms Controller   - List all the console platforms that the site has support for. The index will display a home page for the selected console platform
+
+Future:
+Game Controller        - List all games available for purchase
+Accessories Controller - List all accessories available for purchase
