@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @console.name %>
+</p>
+
+<p>
+  <strong>Abbr:</strong>
+  <%= @console.abbr %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @console.company %>
+</p>
+
+<p>
+  <strong>Release date:</strong>
+  <%= @console.release_date %>
+</p>
+
+<p>
+  <strong>Image path:</strong>
+  <%= @console.image_path %>
+</p>
+
+<%= link_to 'Edit', edit_console_path(@console) %> |
+<%= link_to 'Back', consoles_path %>
