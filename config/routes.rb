@@ -1,5 +1,6 @@
 GameStore::Application.routes.draw do
 
+  devise_for :users
   resources :online_services
 
   resources :accessories
