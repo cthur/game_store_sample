@@ -7,7 +7,7 @@
 	<div id="platform_products_nav" class="row">
 		
 		<!-- TODO: Center -->
-		<ul id="platform_products_tab" class="nav nav-tabs" role="tablist">
+		<ul id="product_tabs" class="nav nav-tabs" role="tablist">
 		  <li class="active"><a href="#preorders" role="tab" data-toggle="tab">Preorder</a></li>
 		  <li><a href="#consoles" role="tab" data-toggle="tab">Consoles</a></li>
 		  <li><a href="#games" role="tab" data-toggle="tab">Games</a></li>
@@ -16,11 +16,11 @@
 		</ul>
 		
 		<div id="product_display" class="tab-content">
-			<div class="tab-pane active" id="preorders">Preorders</div>
-			<div class="tab-pane" id="consoles">Consoles</div>
-			<div class="tab-pane" id="games">Games</div>
-			<div class="tab-pane" id="accessories">Accessories</div>
-			<div class="tab-pane" id="online_services">Online Service</div>
+			<div class="tab-pane active" id="preorders"><%= link_to "Preorders", games_path %></div>
+			<div class="tab-pane" id="consoles"><%= link_to "Consoles", consoles_path %></div>
+			<div class="tab-pane" id="games"><%= link_to "Games", games_path %></div>
+			<div class="tab-pane" id="accessories"><%= link_to "Accessories", accessories_path %></div> <!-- TODO: Change to Accessories -->
+			<div class="tab-pane" id="online_services"><%= link_to "Online Service", online_services_path %></div>
 		</div>	
 		
 	</div>

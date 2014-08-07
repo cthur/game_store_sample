@@ -1,0 +1,37 @@
+<h1>Listing online_services</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Platform</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>Emailed</th>
+      <th>Instore</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @online_services.each do |online_service| %>
+      <tr>
+        <td><%= online_service.name %></td>
+        <td><%= online_service.platform %></td>
+        <td><%= online_service.price %></td>
+        <td><%= online_service.quantity %></td>
+        <td><%= online_service.emailed %></td>
+        <td><%= online_service.instore %></td>
+        <td><%= link_to 'Show', online_service %></td>
+        <td><%= link_to 'Edit', edit_online_service_path(online_service) %></td>
+        <td><%= link_to 'Destroy', online_service, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Online service', new_online_service_path %>

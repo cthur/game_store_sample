@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @accessory.name %>
+</p>
+
+<p>
+  <strong>Platform:</strong>
+  <%= @accessory.platform %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @accessory.price %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @accessory.quantity %>
+</p>
+
+<p>
+  <strong>Instore:</strong>
+  <%= @accessory.instore %>
+</p>
+
+<p>
+  <strong>Online:</strong>
+  <%= @accessory.online %>
+</p>
+
+<%= link_to 'Edit', edit_accessory_path(@accessory) %> |
+<%= link_to 'Back', accessories_path %>

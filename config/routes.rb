@@ -1,5 +1,11 @@
 GameStore::Application.routes.draw do
 
+  resources :online_services
+
+  resources :accessories
+
+  resources :games
+
   resources :platforms
 
   resources :consoles

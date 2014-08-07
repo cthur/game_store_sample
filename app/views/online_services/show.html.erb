@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @online_service.name %>
+</p>
+
+<p>
+  <strong>Platform:</strong>
+  <%= @online_service.platform %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @online_service.price %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @online_service.quantity %>
+</p>
+
+<p>
+  <strong>Emailed:</strong>
+  <%= @online_service.emailed %>
+</p>
+
+<p>
+  <strong>Instore:</strong>
+  <%= @online_service.instore %>
+</p>
+
+<%= link_to 'Edit', edit_online_service_path(@online_service) %> |
+<%= link_to 'Back', online_services_path %>

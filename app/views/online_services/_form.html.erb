@@ -1,0 +1,41 @@
+<%= form_for(@online_service) do |f| %>
+  <% if @online_service.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@online_service.errors.count, "error") %> prohibited this online_service from being saved:</h2>
+
+      <ul>
+      <% @online_service.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :platform %><br>
+    <%= f.text_field :platform %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :quantity %><br>
+    <%= f.number_field :quantity %>
+  </div>
+  <div class="field">
+    <%= f.label :emailed %><br>
+    <%= f.check_box :emailed %>
+  </div>
+  <div class="field">
+    <%= f.label :instore %><br>
+    <%= f.check_box :instore %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

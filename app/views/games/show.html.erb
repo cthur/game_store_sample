@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @game.name %>
+</p>
+
+<p>
+  <strong>Platform:</strong>
+  <%= @game.platform %>
+</p>
+
+<p>
+  <strong>Edition:</strong>
+  <%= @game.edition %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @game.price %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @game.quantity %>
+</p>
+
+<p>
+  <strong>Release date:</strong>
+  <%= @game.release_date %>
+</p>
+
+<p>
+  <strong>Instore:</strong>
+  <%= @game.instore %>
+</p>
+
+<p>
+  <strong>Online:</strong>
+  <%= @game.online %>
+</p>
+
+<p>
+  <strong>Digital:</strong>
+  <%= @game.digital %>
+</p>
+
+<p>
+  <strong>Preorder:</strong>
+  <%= @game.preorder %>
+</p>
+
+<%= link_to 'Edit', edit_game_path(@game) %> |
+<%= link_to 'Back', games_path %>

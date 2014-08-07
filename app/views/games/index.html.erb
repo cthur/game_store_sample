@@ -1,0 +1,45 @@
+<h1>Listing games</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Platform</th>
+      <th>Edition</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>Release date</th>
+      <th>Instore</th>
+      <th>Online</th>
+      <th>Digital</th>
+      <th>Preorder</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @games.each do |game| %>
+      <tr>
+        <td><%= game.name %></td>
+        <td><%= game.platform %></td>
+        <td><%= game.edition %></td>
+        <td><%= game.price %></td>
+        <td><%= game.quantity %></td>
+        <td><%= game.release_date %></td>
+        <td><%= game.instore %></td>
+        <td><%= game.online %></td>
+        <td><%= game.digital %></td>
+        <td><%= game.preorder %></td>
+        <td><%= link_to 'Show', game %></td>
+        <td><%= link_to 'Edit', edit_game_path(game) %></td>
+        <td><%= link_to 'Destroy', game, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Game', new_game_path %>

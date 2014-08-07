@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140805194422) do
+ActiveRecord::Schema.define(version: 20140807194205) do
+
+  create_table "accessories", force: true do |t|
+    t.string   "name"
+    t.string   "platform"
+    t.decimal  "price"
+    t.integer  "quantity"
+    t.boolean  "instore"
+    t.boolean  "online"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "consoles", force: true do |t|
     t.string   "name"
@@ -22,6 +33,32 @@ ActiveRecord::Schema.define(version: 20140805194422) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "slug"
+  end
+
+  create_table "games", force: true do |t|
+    t.string   "name"
+    t.string   "platform"
+    t.string   "edition"
+    t.decimal  "price"
+    t.integer  "quantity"
+    t.string   "release_date"
+    t.boolean  "instore"
+    t.boolean  "online"
+    t.boolean  "digital"
+    t.boolean  "preorder"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "online_services", force: true do |t|
+    t.string   "name"
+    t.string   "platform"
+    t.decimal  "price"
+    t.integer  "quantity"
+    t.boolean  "emailed"
+    t.boolean  "instore"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "platforms", force: true do |t|
