@@ -1,3 +1,38 @@
 // Place all the styles related to the Platforms controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.platforms_page { 
+  
+  width: 100%;
+  margin: 0px auto;
+  
+  h2, h3 {
+    text-align: center;
+  }
+  
+  #platform_products_tab, #product_display {
+    width: 60%;
+    margin: 0px auto;
+  }
+  
+  #product_display {
+    height: 200px;
+    border-left: solid 1px #ddd;
+    border-right: solid 1px gray;
+    border-bottom: solid 1px gray;
+    
+    div {
+      margin: 0px 5px;
+      padding: 5px 0px;
+    }
+  }
+  
+  .thumbnail {
+    width: 100%;
+    height: 150px;
+    background-color: #ddd;
+    border: solid 1px #666;
+  }
+
+}

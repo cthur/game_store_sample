@@ -1,6 +1,8 @@
 class PlatformsController < ApplicationController
   before_action :set_platform, only: [:show, :edit, :update, :destroy]
 
+  # TODO: Index should only be accessed by admin, and any edit, add, destroy should be done by admin
+
   # GET /platforms
   # GET /platforms.json
   def index

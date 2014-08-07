@@ -8,11 +8,15 @@
 </head>
 <body>
 
-<%= render :partial => 'layouts/nav' %>
+<div class="container-fluid"> <!-- For Bootstrap grid -->
 
-<%= yield %>
+	<%= render :partial => 'layouts/nav' %>
+	
+	<%= yield %>
+	
+	<%= render :partial => 'layouts/footer' %>
 
-<%= render :partial => 'layouts/footer' %>
+</div>
 
 </body>
 </html>

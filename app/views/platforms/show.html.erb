@@ -1,14 +1,57 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @platform.name %>
-</p>
+<div class="platforms_page">
 
-<p>
-  <strong>Abbr:</strong>
-  <%= @platform.abbr %>
-</p>
+	<h2><%= @platform.name %></h2>
+	
+	<div id="platform_products_nav" class="row">
+		
+		<!-- TODO: Center -->
+		<ul id="platform_products_tab" class="nav nav-tabs" role="tablist">
+		  <li class="active"><a href="#preorders" role="tab" data-toggle="tab">Preorder</a></li>
+		  <li><a href="#consoles" role="tab" data-toggle="tab">Consoles</a></li>
+		  <li><a href="#games" role="tab" data-toggle="tab">Games</a></li>
+		  <li><a href="#accessories" role="tab" data-toggle="tab">Accessories</a></li>
+		  <li><a href="#online_services" role="tab" data-toggle="tab">PSN</a></li> <!-- TODO: Change based on platform -->
+		</ul>
+		
+		<div id="product_display" class="tab-content">
+			<div class="tab-pane active" id="preorders">Preorders</div>
+			<div class="tab-pane" id="consoles">Consoles</div>
+			<div class="tab-pane" id="games">Games</div>
+			<div class="tab-pane" id="accessories">Accessories</div>
+			<div class="tab-pane" id="online_services">Online Service</div>
+		</div>	
+		
+	</div>
+	
+	<h3>Best Selling <%= @platform.abbr %> Games</h3>
+	
+	<div class="row">
+		
+	  <div class="col-xs-12 col-md-1 col-md-offset-1">
+		    <a href="#" class="thumbnail">Game</a>
+      </div>
+	  
+	  <% 8.times do %>
+		  <div class="col-xs-12 col-md-1">
+		    <a href="#" class="thumbnail">Game</a>
+		  </div>
+	  <% end %>
+	  
+	  <div class="col-xs-12 col-md-1">
+		    <a href="#" class="thumbnail">Game</a>
+      </div>
+	  
+	  <div class="col-xs-12 col-md-1">
 
-<%= link_to 'Edit', edit_platform_path(@platform) %> |
-<%= link_to 'Back', platforms_path %>
+      </div>
+	  
+	</div>
+	
+	<div class="admin center">
+		<%= link_to 'Edit', edit_platform_path(@platform) %> |
+		<%= link_to 'Back', platforms_path %>
+	</div>
+
+</div>
