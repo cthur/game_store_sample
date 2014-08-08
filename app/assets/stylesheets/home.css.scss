@@ -2,23 +2,48 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#slider {
-  margin: auto;
-  width: 500px;
-}
-
-#carousel {
-  margin: 0 auto;
-  width: 700px;
-}
-
-#home_game_lists {
-  margin: 20px auto;
-}
-
-#home_game_lists > div {
-  h3, ol {
-    width: 200px;
-    margin: 5px auto;
+#home_index {
+  
+  #slider {
+    margin: auto;
+    width: 500px;
+  }
+  
+  #carousel {
+    margin: 0 auto;
+    width: 700px;
+  }
+  
+  #home_game_lists {
+    margin: 20px auto;
+  }
+  
+  #home_game_lists > div {
+    h3, ol {
+      width: 200px;
+      margin: 5px auto;
+    }
   }
 }
+
+#login {
+  
+  margin: 20px;
+  
+  #signin, #register {
+    background-color: #ddd;
+    height: 300px;
+    
+    h2 {
+      text-align: center;
+    }
+    
+    div {
+      /*border: solid 1px red; Test*/
+      width: 80%;  
+      margin: 0 auto;
+    }
+  }
+  
+}
+
