@@ -14,6 +14,8 @@ GameStore::Application.routes.draw do
   
   get '/login/', to: 'home#login'
   
+  get '/cart/', to: 'home#cart'
+  
   root 'home#index'
   
   
