@@ -7,9 +7,5 @@ class HomeController < ApplicationController
   def login
     
   end
-  
-  def cart
-    
-  end
 
 end
